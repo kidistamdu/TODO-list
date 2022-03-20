@@ -103,8 +103,13 @@ body{
     cursor: pointer;
     transition: all .25s ease;
     transition-property: box-shadow, transform, border-color;
+    color: white;
 }
-
+.todo-text{
+    display: flex;
+    align-items: center;
+  
+}
 .todo-items-wrapper {
     margin-top: 30px;
     background-color: hsl(235, 21%, 11%);
