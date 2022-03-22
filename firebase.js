@@ -1,4 +1,4 @@
-const firebaseConfig = {
+var firebaseConfig = {
     apiKey: "AIzaSyCG9T83u32uxFZlO-C6ojg-1nAz82OAcfs",
     authDomain: "to-do-list-21803.firebaseapp.com",
     projectId: "to-do-list-21803",
@@ -9,6 +9,6 @@ const firebaseConfig = {
   };
 
   // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  const db = getFirestore();
+  var app = initializeApp(firebaseConfig);
+  var analytics = getAnalytics(app);
+  var db =  firebase.firestore();
