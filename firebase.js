@@ -9,6 +9,5 @@ var firebaseConfig = {
   };
 
   // Initialize Firebase
-  var app = initializeApp(firebaseConfig);
-  var analytics = getAnalytics(app);
+  var app = firebase.initializeApp(firebaseConfig);
   var db =  firebase.firestore();
