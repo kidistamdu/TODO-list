@@ -8,3 +8,9 @@ function addItem(event){
     text.value = "";
 }
 
+
+function getItems(){
+    db.collection("todo-items").onSnapshot((snapshot) => {
+        
+    }) 
+}
