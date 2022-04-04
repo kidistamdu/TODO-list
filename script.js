@@ -43,8 +43,19 @@ function getItems(){
             `
         })
         document.querySelector(".todo-items").innerHTML = itemsHTML;
+        createEventListeners();
 
     }
+     
+    function createEventListeners(){
+        let todoCheckMarks = document.querySelectorAll(".todo-items .check")
+        todoCheckMarks.forEach((checkMark)=>{
+            checkMark.addEventListener("click", function(){
 
+            })
 
+        })
+
+    }
+ 
 getItems();
