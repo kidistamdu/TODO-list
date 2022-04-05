@@ -57,5 +57,21 @@ function getItems(){
         })
 
     }
- 
+      
+    function markCompleted(id){
+        let item = db.collection("todo-items").doc(id);
+        item.get().then(function(doc) {
+            if (doc.exists) {
+                if(doc.data().status == "active"){
+                    item.update({
+                        status: "completed"
+                    })
+                } else {
+                    item.update({
+                        status: "active"
+                    })
+                }
+            }
+        })
+    }
 getItems();
